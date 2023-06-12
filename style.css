@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    text-decoration: none;
+}
+body{
+    background-color: #a4d0d1;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/corazon1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu .logo{
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(196, 233, 255);
+
+}
+.menu .navbar ul{
+    list-style: none;
+}
+.menu  .navbar ul li {
+position: relative;
+float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18x;
+    padding: 20px;
+    color:beige;
+    display: block;
+    }
+.menu .navbar ul li a:hover{
+    color:#8aabc5;
+   
+}
+#menu{
+    display: none;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-text{
+    text-align: center;
+    width: 700px;
+}
+.header-text h1{
+    color: azure;
+    font-size: 50px;
+}
+.header-text p{
+    font-size: 30px;
+    color: azure;
+}
+.btn-1 {
+    display: inline-block;
+    background-color: #061faf;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius:25px;
+    color: beige;
+}
+.btn-1:hover {
+    background-color: aquamarine;
+}
+.services {
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 25px;
+    color:rgb(22, 4, 73);
+}
+.services h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+    color:rgb(8, 1, 29);
+}
+.txt-1{
+    font-size: 18px;
+    padding: 0px 200px;
+
+}
+.audio{
+    align-items: center;
+    justify-content: center;
+
+}
+.audio-txt{
+    margin-bottom: 50px;   
+}
+.audio-txt h2{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom:35;
+    color:rgb(8, 1, 29);
+}
+.audio p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.porfolio {
+    text-align:center; 
+    padding: 50px 0px;
+    font-size: 30px;
+    color:rgb(2, 25, 44)
+}
+
+.porfolio-txt{
+    margin-bottom: 50px;
+}
+
+.porfolio-txt h2{
+    font-size: 55px;
+    margin-bottom:35;
+    color:rgb(8, 1, 29);
+
+}
+.porfolio-txt-p {
+    text-align: center;
+    font-size: 30px;
+}
+.more {
+    text-align:center; 
+    padding: 50px 0px;
+    font-size: 30px;
+    color:rgb(2, 25, 44)
+
+}
+.more-txt {
+    margin-bottom: 50px;
+
+
+}
+.more-txt h2{
+    font-size: 55px;
+    margin-bottom:35;
+    color:rgb(8, 1, 29);
+
+}
+.more-txt p{
+    text-align: center;
+    font-size: 30px;
+
+}
+.imgs {
+    display: flex;
+    justify-content: center;
+}
+.imgs img {
+    width: 250px;
+    margin: 0px 10px;
+}
+
+.bg-sec {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(img/bg-sec.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+.bg-text {
+    padding: 100px 0px;
+    text-align: center;
+    color:#ffffff;   
+}
+
+.bg-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.final {
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 19px;
+    color:rgb(22, 4, 73);
+}
+.final-txt {
+    margin-bottom: 50px;
+}
+.final-txt h4 {
+    font-size: 55px;
+    margin-bottom:35;
+    color:rgb(8, 1, 29);
+}
+.final-txt p {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+  @media (max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute; 
+        top: 100%;
+        left:0;
+        right:0;
+        background-color: rgb(9, 2, 55);
+        display: none;
+        }
+    .menu .navbar ul li {
+            width: 100%;
+        } 
+    .menu .navbar ul li a:hover {
+            color:beige
+        }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .menu-icono {
+        width: 40px;
+
+    }
+    .header-text {
+        margin-top: 50px;
+        padding: 0px 25px;
+    }
+    
+    .services {
+        padding: 30px;
+    }       
+    .txt-1 {
+        padding: 30px;
+        margin-top: 55px;
+    
+    }
+    .porfolio {
+        padding: 0px 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .porfolio-txt p {
+        margin: 0;
+    }
+    .imgs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgs img{ 
+        margin: 15px 0px 0px 0px;
+
+    }
+    .im {
+        flex-direction: column;
+        align-items: center;
+       
+
+
+    }
+    .im img{
+         margin: 15px 0px 0px 0px;
+         opacity: .2;
+        
+
+    }
+
+
+
+    
+} 
+
